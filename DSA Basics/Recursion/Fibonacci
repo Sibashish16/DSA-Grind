@@ -1,0 +1,17 @@
+public class Main {
+    public static void main(String[] args) {
+        Main main = new Main();
+        System.out.println(main.fib(2));
+    }
+    public int fib(int n) {
+        if (n <= 1) 
+           return n;
+        int a = 0, b = 1;
+        for (int i = 2; i <= n; i++) {
+            int f = b;
+            b = a + b;
+            a = f;
+        }
+        return b;
+    }
+}
