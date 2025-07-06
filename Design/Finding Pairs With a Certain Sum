@@ -1,0 +1,25 @@
+import java.util.*;
+class FindSumPairs{
+    int[] n1, n2;
+
+    public FindSumPairs(int[] nums1, int[] nums2){
+        n1 = nums1;
+        n2 = nums2;
+    }
+
+    public void add(int index, int val){
+        n2[index] += val;
+    }
+
+    public int count(int tot){
+        Map<Integer, Integer> freq = new HashMap<>();
+        for (int y : n2){
+            freq.put(y, freq.getOrDefault(y, 0) + 1);
+        }
+        int res = 0;
+        for (int x : n1){
+            res += freq.getOrDefault(tot - x, 0);
+        }
+        return res;
+    }
+}
