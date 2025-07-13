@@ -1,5 +1,4 @@
-Hello Coders,
-            Welcome to my personal repository of Data Structures and Algorithms (DSA) solutions, primarily from LeetCode. This repo contains solutions to problems I’ve solved as part of my ongoing learning and preparation for technical interviews.
+Welcome to my personal repository of Data Structures and Algorithms (DSA) solutions, primarily from LeetCode. This repo contains solutions to problems I’ve solved as part of my ongoing learning and preparation for technical interviews.
 
 Each solution is written in a clean, structured way often with comments or optimizations and is organized topic wise.
 
