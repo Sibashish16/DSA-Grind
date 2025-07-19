@@ -1,0 +1,22 @@
+class Solution {
+    public long splitArray(int[] nums) {
+        long arrA=0, arrB=0;
+        for(int i=0;i<nums.length;i++){
+            if(isPrime(i)){
+                arrA=arrA+nums[i];
+            } else{
+                arrB=arrB+nums[i];
+            }
+        }
+        return Math.abs(arrA-arrB);
+    }
+    private boolean isPrime(int n){
+        if(n<=1) return false;
+        if(n==2) return true;
+        if(n%2==0) return false;
+        for(int i=3; i<=Math.sqrt(n); i=i+2){
+            if(n%i==0) return false;
+        }
+        return true;
+    }
+}
